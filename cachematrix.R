@@ -8,8 +8,8 @@ makeCacheMatrix <- function(x = matrix()) {
         invmat <- NULL
         #define the set function to cache the matrix provided
         set <- function(y) {
-                x <<- y*
-                        invmat <<- NULL
+                x <<- y
+                invmat <<- NULL
         }
         #return the the cached matrix
         get <- function() x
